@@ -9,7 +9,7 @@ var a = 100;
 var b = 200;
 
 //try to avoid blocking fn calls
-fs.readFileSync('./file.txt', "utf-8"); // blocking task, i.e. will block the main thread. 
+// fs.readFileSync('./file.txt', "utf-8"); // blocking task, i.e. will block the main thread. 
 
 // This will only be pushed to call stack in v8 once the call stack gets empty 
 setTimeout(() => {
